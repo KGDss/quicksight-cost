@@ -123,7 +123,7 @@ const ChartDisplay: React.FC<ChartDisplayProps> = ({
         </div>
 
         {/* Sum Display */}
-        <div className="p-6 border border-slate-300 rounded-lg shadow-md bg-slate-50">
+        <div className="p-10 border border-slate-300 rounded-lg shadow-md bg-slate-50">
           <h3 className="text-lg font-semibold mb-2 text-slate-700">
             User based total:
           </h3>
