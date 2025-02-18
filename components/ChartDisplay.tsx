@@ -110,7 +110,7 @@ const ChartDisplay: React.FC<ChartDisplayProps> = ({
   };
 
   return (
-    <div className="flex flex-col mx-4 border border-black p-3 w-fit">
+    <div className="flex flex-col mx-2 border border-black p-3 w-fit">
       {/* Heading */}
       <h2 className="text-2xl font-bold text-slate-700 mb-6">
         User Based Pricing

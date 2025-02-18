@@ -34,7 +34,7 @@ export default function Home() {
         />
       </div>
 
-      <div className="flex gap-4 justify-center">
+      <div className="flex gap-2 justify-center">
         <ChartDisplay
           author={author}
           authorPro={authorPro}
