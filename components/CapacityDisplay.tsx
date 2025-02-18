@@ -170,7 +170,7 @@ const ChartDisplay: React.FC<ChartDisplayProps> = ({
   };
 
   return (
-    <div className="flex flex-col mx-2 px-5 border border-black p-3 w-fit">
+    <div className="flex flex-col mx-2 px-1 border border-black w-fit">
       {/* Heading */}
       <h2 className="text-2xl font-bold text-slate-700 mb-6">
         Capacity-Based Pricing
@@ -281,14 +281,14 @@ const ChartDisplay: React.FC<ChartDisplayProps> = ({
       </div>
 
       <div className="mt-4">
-        <div className="flex">
+        <div className="flex relative">
           {/* Chart Display */}
-          <div className="w-full max-w-md mx-2">
+          <div className="w-full max-w-md mr-1">
             <Bar data={data} options={options} />
           </div>
 
           {/* Sum Display */}
-          <div className="p-10 border border-slate-300 rounded-lg shadow-md bg-slate-50">
+          <div className="p-3 border border-slate-300 rounded-lg shadow-md bg-slate-50">
             <h3 className="text-lg font-semibold mb-2 text-slate-700">
               Capacity-Based Total:
             </h3>
@@ -296,7 +296,7 @@ const ChartDisplay: React.FC<ChartDisplayProps> = ({
               <li>Author: {authorTotal} $</li>
               <li>Author Pro: {authorProTotal} $</li>
               <li>Reader Capacity: {readerCapacity.toFixed(2)} $</li>
-              <li>Amazon Q Capacity: {amazonQCapacity.toFixed(2)} $</li>
+              <li>Q&apos;s Capacity: {amazonQCapacity.toFixed(2)} $</li>
               <li>Reader Sessions: {readerSessionCost.toFixed(2)} $</li>
               <li>Amazon Q Questions: {amazonQuestionCost.toFixed(2)} $</li>
               <li>Enablement Fee: {enableFee} $</li>
