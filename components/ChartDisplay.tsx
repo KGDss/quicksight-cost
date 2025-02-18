@@ -118,12 +118,12 @@ const ChartDisplay: React.FC<ChartDisplayProps> = ({
 
       <div className="flex">
         {/* Chart Display */}
-        <div className="w-full max-w-md mx-4">
+        <div className="w-full max-w-md mx-2">
           <Bar data={data} options={options} />
         </div>
 
         {/* Sum Display */}
-        <div className="p-4 border border-slate-300 rounded-lg shadow-md bg-slate-50">
+        <div className="p-6 border border-slate-300 rounded-lg shadow-md bg-slate-50">
           <h3 className="text-lg font-semibold mb-2 text-slate-700">
             User based total:
           </h3>

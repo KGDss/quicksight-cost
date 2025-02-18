@@ -283,7 +283,7 @@ const ChartDisplay: React.FC<ChartDisplayProps> = ({
       <div className="mt-4">
         <div className="flex">
           {/* Chart Display */}
-          <div className="w-full max-w-md mx-4">
+          <div className="w-full max-w-md mx-2">
             <Bar data={data} options={options} />
           </div>
 
