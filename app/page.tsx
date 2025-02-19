@@ -34,6 +34,29 @@ export default function Home() {
         />
       </div>
 
+      <div className="mb-5">
+        {authorPro > 0 ? (
+          <div className="flex justify-center text-red-400">
+            {" "}
+            * A $250/month per account Amazon Q enablement fee applies for
+            accounts with at least one Pro user or with at least one Amazon Q
+            Topic.
+          </div>
+        ) : (
+          <></>
+        )}
+        {authorPro > 0 || author > 0 ? (
+          <div className="flex justify-center text-green-400">
+            {" "}
+            Free SPICE for Author + Author Pro : {authorPro * 10 +
+              author * 10}{" "}
+            GB
+          </div>
+        ) : (
+          <></>
+        )}
+      </div>
+
       <div className="flex gap-2 justify-center">
         <ChartDisplay
           author={author}
